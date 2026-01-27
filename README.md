@@ -5,7 +5,7 @@ The configuration files for my Fedora Silverblue desktop setup.
 [activity]: https://badge.hanna.lol/activity/hanna/dots
 [license]: https://badge.hanna.lol/license/0BSD
 
-## How to use these
+## Usage
 
 > [!NOTE]
 > These configuration files are **not** tailored to be used by multiple people.  
