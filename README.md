@@ -1,6 +1,22 @@
 # dots ![license] ![activity]
 
-[license]: https://badge.hanna.lol/license/0BSD
-[activity]: https://badge.hanna.lol/activity/hanna/dots
-
 The configuration files for my Fedora Silverblue desktop setup.
+
+[activity]: https://badge.hanna.lol/activity/hanna/dots
+[license]: https://badge.hanna.lol/license/0BSD
+
+## How to use these
+
+> [!NOTE]
+> These configuration files are **not** tailored to used for multiple people.  
+> They are specifically created for me and my systems, not for others' setups.
+
+This repository is structured in a way to be compatible with the [stow] project.
+
+```console
+$ stow -t $HOME <package>
+```
+
+This will set up a symlink to the package's files allowing easy editing.
+
+[stow]: https://www.gnu.org/software/stow
