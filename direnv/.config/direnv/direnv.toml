@@ -1,0 +1,8 @@
+bash_path = "/usr/bin/bash"
+hide_env_diff = true
+disable_stdin = true
+strict_env = true
+warn_timeout = 0
+
+[whitelist]
+prefix = [ "/var/home/hanna/code" ]

@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+declare -A direnv_layout_dirs
+: ${XDG_CACHE_HOME:=$HOME/.cache}
+
+direnv_layout_dir() {
+  echo "${direnv_layout_dirs[$PWD]:=$(
+    echo -n "$XDG_CACHE_HOME/direnv/layouts/"
+    echo -n "$PWD" | sha1sum | cut -c 1-32 | tr -d '\n'
+    echo -n "-$(basename $PWD | tr 'A-Z' 'a-z')"
+  )}"
+}
