@@ -1,0 +1,40 @@
+[user]
+name = hanna
+email = me@hanna.lol
+signingKey = E68958B151034FFB
+
+[core]
+autocrlf = false
+repositoryFormatVersion = 1
+compatObjectFormat = sha1
+objectFormat = sha256
+editor = helix
+
+[commit]
+gpgsign = true
+
+[push]
+default = simple
+autoSetupRemote = true
+
+[lfs]
+enabled = true
+locksverify = true
+
+[pull]
+rebase = true
+
+[fetch]
+prune = true
+
+[rerere]
+enabled = true
+
+[submodule]
+recurse = true
+
+[init]
+defaultBranch = main
+
+[credential]
+helper = store
