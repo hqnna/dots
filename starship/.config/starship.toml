@@ -1,0 +1,25 @@
+scan_timeout = 60
+add_newline = false
+command_timeout = 3600
+
+format = "$directory$git_branch[\\$](bright-black) "
+right_format = "${custom.container}$nix_shell"
+
+[custom.container]
+format = "[󰆧 $output]($style)"
+when = "test -n \"$CONTAINER_ID\""
+command = "echo $CONTAINER_ID"
+style = "bright-black"
+
+[nix_shell]
+format = " [󱄅 $state]($style)"
+style = "bright-black"
+
+[directory]
+format = "[$path]($style) "
+truncate_to_repo = false
+style = "blue"
+
+[git_branch]
+format = "[$branch]($style) "
+style = "purple"
