@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+export ANTIDOTE_HOME="$XDG_DATA_HOME/antidote"
+plugins="$XDG_CONFIG_HOME/zsh/plugins"
+cache="$ANTIDOTE_HOME/bundle.zsh"
+
+if [ ! -d "$ANTIDOTE_HOME" ]; then
+  git clone --depth=1 https://github.com/mattmc3/antidote "$ANTIDOTE_HOME"
+fi
+
+if [ ! -f "$cache" ]; then
+  source "$ANTIDOTE_HOME/antidote.zsh"
+  antidote bundle < "$plugins" > "$cache"
+fi
+
+source "$cache"

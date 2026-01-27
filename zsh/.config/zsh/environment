@@ -1,0 +1,54 @@
+#!/usr/bin/env zsh
+
+export EDITOR="hx"
+export COLORTERM="truecolor"
+export PATH="$PATH:$HOME/.local/bin"
+
+if [[ "$CONTAINER_ID" == "dev" ]]; then
+  PATH="$PATH:$XDG_STATE_HOME/nix/profile/bin"
+  PATH="$PATH:$HOME/.amp/bin"
+  eval "$(direnv hook zsh)"
+fi
+
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+
+export _JAVA_OPTIONS="-Djava.util.prefs.userRoot=$XDG_CONFIG_HOME/java"
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
+export NODE_REPL_HISTORY="$XDG_STATE_HOME/node_history"
+export SQLITE_HISTORY="$XDG_STATE_HOME/sqlite_history"
+export LESSHISTFILE="$XDG_STATE_HOME/less_history"
+export CUDA_CACHE_PATH="$XDG_CACHE_HOME/cuda"
+export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export GNUPGHOME="$XDG_DATA_HOME/gnupg"
+export GOPATH="$XDG_DATA_HOME/go"
+
+alias cat="$(command -v bat)"
+alias ls="$(command -v lsr) --hyperlinks=never"
+alias ll="$(command -v lsr) -l --hyperlinks=never"
+alias lla="$(command -v lsr) -la --hyperlinks=never"
+alias gri="$(command -v git) rebase --interactive"
+alias gcr="$(command -v git) clone --recursive"
+alias gpa="$(command -v git) push --atomic"
+alias gco="$(command -v git) commit"
+alias grt="$(command -v git) remote"
+alias grb="$(command -v git) rebase"
+alias gst="$(command -v git) stash"
+alias gcl="$(command -v git) clone"
+alias grs="$(command -v git) reset"
+alias gpu="$(command -v git) push"
+alias gpl="$(command -v git) pull"
+alias gin="$(command -v git) init"
+alias gtg="$(command -v git) tag"
+
+bindkey '\e[H' beginning-of-line
+bindkey '\e[F' end-of-line
+
+setopt SHARE_HISTORY
+mkdir -p "$XDG_STATE_HOME/zsh/history"
+HISTFILE="$XDG_STATE_HOME/zsh/history/${CONTAINER_ID:=$HOST}"
+HISTSIZE=10000
+SAVEHIST=1000
