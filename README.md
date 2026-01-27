@@ -8,8 +8,9 @@ The configuration files for my Fedora Silverblue desktop setup.
 ## How to use these
 
 > [!NOTE]
-> These configuration files are **not** tailored to used for multiple people.  
-> They are specifically created for me and my systems, not for others' setups.
+> These configuration files are **not** tailored to be used by multiple people.  
+> They are specifically created for me and my systems, not for others people's
+> setups.
 
 This repository is structured in a way to be compatible with the [stow] project.
 
