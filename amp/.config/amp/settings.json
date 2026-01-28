@@ -34,6 +34,7 @@
   ],
   "amp.experimental.modes": [
     "bombadil",
+    "large",
     "deep"
   ]
 }
