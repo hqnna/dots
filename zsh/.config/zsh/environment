@@ -4,12 +4,6 @@ export EDITOR="hx"
 export COLORTERM="truecolor"
 export PATH="$PATH:$HOME/.local/bin"
 
-if [[ "$CONTAINER_ID" == "dev" ]]; then
-  PATH="$PATH:$XDG_STATE_HOME/nix/profile/bin"
-  PATH="$PATH:$HOME/.amp/bin"
-  eval "$(direnv hook zsh)"
-fi
-
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -46,6 +40,12 @@ alias gtg="$(command -v git) tag"
 
 bindkey '\e[H' beginning-of-line
 bindkey '\e[F' end-of-line
+
+if [[ "$CONTAINER_ID" == "dev" ]]; then
+  PATH="$PATH:$XDG_STATE_HOME/nix/profile/bin"
+  PATH="$PATH:$HOME/.amp/bin"
+  eval "$(direnv hook zsh)"
+fi
 
 setopt SHARE_HISTORY
 mkdir -p "$XDG_STATE_HOME/zsh/history"
