@@ -3,3 +3,7 @@
 -- fit in the normal config locations above can go here
 
 vim.opt.relativenumber = false
+
+vim.api.nvim_create_autocmd("TermOpen", {
+  callback = function() vim.bo.buflisted = false end
+})

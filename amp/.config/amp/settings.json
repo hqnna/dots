@@ -29,9 +29,6 @@
       "action": "allow"
     }
   ],
-  "amp.experimental.tools": [
-    "codemod"
-  ],
   "amp.experimental.modes": [
     "bombadil",
     "large",
