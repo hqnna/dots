@@ -1,6 +1,6 @@
 return {
   {
-    'edeneast/nightfox.nvim'
+    'edeneast/nightfox.nvim',
   },
   {
     'astronvim/astroui',
