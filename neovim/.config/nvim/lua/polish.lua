@@ -5,5 +5,7 @@
 vim.opt.relativenumber = false
 
 vim.api.nvim_create_autocmd("TermOpen", {
-  callback = function() vim.bo.buflisted = false end
+  callback = function()
+    vim.bo.buflisted = false
+  end
 })
