@@ -1,6 +1,6 @@
 ---
 name: rust
-description: Detailed instructions for rust projects.
+description: Use when working on rust projects.
 ---
 
 References
