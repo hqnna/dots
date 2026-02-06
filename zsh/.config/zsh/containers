@@ -1,8 +1,5 @@
 #!/usr/bin/env zsh
 
-export HISTFILE
-export PATH="$PATH"
-
 case "$CONTAINER_ID" in
   dev)
     PATH="$PATH:$HOME/.amp/bin"
