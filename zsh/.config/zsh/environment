@@ -41,14 +41,8 @@ alias gtg="$(command -v git) tag"
 bindkey '\e[H' beginning-of-line
 bindkey '\e[F' end-of-line
 
-if [[ "$CONTAINER_ID" == "dev" ]]; then
-  PATH="$PATH:$XDG_STATE_HOME/nix/profile/bin"
-  PATH="$PATH:$HOME/.amp/bin"
-  eval "$(direnv hook zsh)"
-fi
-
 setopt SHARE_HISTORY
 mkdir -p "$XDG_STATE_HOME/zsh/history"
-HISTFILE="$XDG_STATE_HOME/zsh/history/${CONTAINER_ID:=$HOST}"
+HISTFILE="$XDG_STATE_HOME/zsh/history/$HOST"
 HISTSIZE=10000
 SAVEHIST=1000

@@ -1,0 +1,12 @@
+#!/usr/bin/env zsh
+
+export HISTFILE
+export PATH="$PATH"
+
+case "$CONTAINER_ID" in
+  dev)
+    PATH="$PATH:$HOME/.amp/bin"
+    PATH="$PATH:$XDG_STATE_HOME/nix/profile/bin"
+    HISTFILE="$XDG_STATE_HOME/zsh/history/$CONTAINER_ID"
+    eval "$(direnv hook zsh)" ;;
+esac
