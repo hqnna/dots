@@ -2,8 +2,14 @@ scan_timeout = 60
 add_newline = false
 command_timeout = 3600
 
-format = "$directory$git_branch[\\$](bright-black) "
+format = "$directory$git_branch${custom.arc}[\\$](bright-black) "
 right_format = "${custom.container}$nix_shell"
+
+[custom.arc]
+when = "test -d \"${PWD}/.arc\""
+command = "arc mark list | awk '/★/ {print $2}'"
+format = "[$output]($style) "
+style = "purple"
 
 [custom.container]
 format = "[󰆧 $output]($style)"
