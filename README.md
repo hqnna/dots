@@ -2,8 +2,8 @@
 
 The configuration files for my Fedora Silverblue desktop setup.
 
-[activity]: https://badge.hanna.lol/activity/hanna/dots
-[license]: https://badge.hanna.lol/license/0BSD
+[activity]: https://img.shields.io/github/last-commit/hqnna/dots?label=activity&labelColor=4a414e&color=3373cc
+[license]: https://img.shields.io/github/license/hqnna/dots?labelColor=4a414e&color=3373cc
 
 ## Usage
 
