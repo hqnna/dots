@@ -3,6 +3,7 @@
 case "$CONTAINER_ID" in
   dev)
     PATH="$PATH:$HOME/.amp/bin"
+    PATH="$PATH:$XDG_CONFIG_HOME/npm/bin"
     PATH="$PATH:$XDG_STATE_HOME/nix/profile/bin"
     HISTFILE="$XDG_STATE_HOME/zsh/history/$CONTAINER_ID"
     eval "$(direnv hook zsh)" ;;
