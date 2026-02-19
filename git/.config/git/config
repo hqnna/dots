@@ -1,7 +1,13 @@
 [user]
 name = hanna
 email = me@hanna.lol
-signingKey = E68958B151034FFB
+signingKey = ~/.ssh/id_ed25519.pub
+
+[gpg]
+format = ssh
+
+[gpg "ssh"]
+allowedSignersFile = /home/hanna/.config/git/signers
 
 [core]
 autocrlf = false
@@ -9,6 +15,9 @@ repositoryFormatVersion = 1
 compatObjectFormat = sha1
 objectFormat = sha256
 editor = nvim
+
+[tag]
+gpgsign = true
 
 [commit]
 gpgsign = true
