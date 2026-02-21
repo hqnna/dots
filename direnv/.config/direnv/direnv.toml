@@ -1,4 +1,4 @@
-bash_path = "/usr/bin/bash"
+bash_path = "/bin/bash"
 hide_env_diff = true
 disable_stdin = true
 strict_env = true
