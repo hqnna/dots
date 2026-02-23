@@ -1,10 +1,7 @@
 theme = Carbonfox
-window-theme = ghostty
 window-title-font-family = Inter Display
 window-padding-color = extend
-gtk-toolbar-style = flat
-gtk-titlebar-style = tabs
-gtk-wide-tabs = false
+window-show-tab-bar = never
 window-padding-x = 5
 window-width = 106
 window-height = 32
@@ -22,7 +19,9 @@ cursor-style-blink = true
 
 shell-integration = zsh
 shell-integration-features = title, cursor, ssh-terminfo
+
 keybind = shift+enter=text:\x1b\r
+keybind = control+tab=toggle_tab_overview
 
 async-backend = io_uring
 gtk-single-instance = true
