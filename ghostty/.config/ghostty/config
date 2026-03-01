@@ -3,7 +3,7 @@ window-title-font-family = Inter Display
 window-padding-color = extend
 window-show-tab-bar = never
 window-padding-x = 5
-window-width = 106
+window-width = 112
 window-height = 32
 
 font-family = Berkeley Mono
