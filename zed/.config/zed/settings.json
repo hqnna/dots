@@ -1,0 +1,111 @@
+{
+  // Apperance Settings --------------------------------------------------------
+
+  "theme": "Carbonfox",
+  "icon_theme": "Base Charmed Icons",
+
+  "buffer_font_family": "Berkeley Mono",
+  "buffer_font_fallbacks": ["Symbols Nerd Font Mono"],
+  "buffer_font_features": { "calt": true },
+  "buffer_line_height": { "custom": 1.5 },
+  "buffer_font_size": 12,
+
+  "ui_font_family": "Inter",
+  "ui_font_size": 14,
+
+  "text_rendering_mode": "subpixel",
+  "image_viewer": { "unit": "decimal" },
+  "collaboration_panel": { "button": false },
+  "notification_panel": { "button": false },
+  "git_panel": { "default_width": 300 },
+  "file_finder": { "git_status": false },
+  "show_call_status_icon": false,
+  "tabs": { "file_icons": true },
+
+  "toolbar": {
+    "selections_menu": false,
+    "agent_review": false,
+    "code_actions": true,
+  },
+
+  "title_bar": {
+    "show_branch_icon": true,
+    "show_onboarding_banner": false,
+    "show_user_picture": false,
+    "show_user_menu": false,
+    "show_sign_in": false,
+  },
+
+  "project_panel": {
+    "default_width": 300,
+    "indent_guides": { "show": "never" },
+    "auto_open": {
+      "on_create": true,
+      "on_paste": false,
+      "on_drop": false,
+    },
+  },
+
+  "outline_panel": {
+    "indent_size": 15,
+    "git_status": false,
+    "file_icons": false,
+    "folder_icons": false,
+  },
+
+  "status_bar": {
+    "line_endings_button": true,
+    "active_encoding_button": "enabled",
+  },
+
+  "terminal": {
+    "font_family": "Berkeley Mono",
+    "font_fallbacks": ["Symbols Nerd Font Mono"],
+    "cursor_shape": "bar",
+    "default_height": 300,
+    "blinking": "on",
+    "font_size": 12,
+  },
+
+  // Editor Settings -----------------------------------------------------------
+
+  "drop_target_size": 0.25,
+  "close_on_file_delete": true,
+  "close_panel_on_toggle": true,
+  "scroll_beyond_last_line": "off",
+  "when_closing_with_no_tabs": "keep_window_open",
+  "on_last_window_closed": "quit_app",
+  "completion_menu_scrollbar": "auto",
+  "allow_rewrap": "in_selections",
+  "document_folding_ranges": "on",
+  "semantic_tokens": "combined",
+  "use_smartcase_search": true,
+  "lsp_highlight_debounce": 60,
+  "use_on_type_format": false,
+  "wrap_guides": [80],
+
+  "search": {
+    "center_on_match": true,
+    "include_ignored": false,
+    "regex": true,
+  },
+
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+      "update_debounce_ms": 60,
+      "max_severity": "all",
+      "padding": 5,
+    },
+  },
+
+  // Other Settings ------------------------------------------------------------
+
+  "disable_ai": true,
+  "auto_update": false,
+
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": false,
+  },
+}
