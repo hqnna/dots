@@ -95,7 +95,7 @@
       "enabled": true,
       "update_debounce_ms": 60,
       "max_severity": "all",
-      "padding": 5,
+      "min_column": 80,
     },
   },
 
