@@ -1,4 +1,7 @@
-# dots
+# dots ![license] ![activity]
+
+[license]: https://img.shields.io/github/license/hqnna/dots?labelColor=4c4350&color=3672cb
+[activity]: https://img.shields.io/github/last-commit/hqnna/dots?label=activity&labelColor=4c4350&color=3672cb
 
 The configuration files for my Fedora Silverblue desktop setup.
 
