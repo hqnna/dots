@@ -21,9 +21,9 @@ export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export GOPATH="$XDG_DATA_HOME/go"
 
 alias cat="$(command -v bat)"
-alias ls="$(command -v lsr) --hyperlinks=never"
-alias ll="$(command -v lsr) -l --hyperlinks=never"
-alias lla="$(command -v lsr) -la --hyperlinks=never"
+alias ls="$(command -v lsd) --hyperlink=never"
+alias ll="$(command -v lsd) -l --hyperlink=never"
+alias lla="$(command -v lsd) -la --hyperlink=never"
 alias gri="$(command -v git) rebase --interactive"
 alias gcr="$(command -v git) clone --recursive"
 alias gpa="$(command -v git) push --atomic"
@@ -42,7 +42,6 @@ bindkey '\e[H' beginning-of-line
 bindkey '\e[F' end-of-line
 
 setopt SHARE_HISTORY
-mkdir -p "$XDG_STATE_HOME/zsh/history"
-HISTFILE="$XDG_STATE_HOME/zsh/history/$HOST"
+HISTFILE="$XDG_STATE_HOME/zsh/history"
 HISTSIZE=10000
 SAVEHIST=1000
