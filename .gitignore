@@ -1,2 +1,5 @@
 # Git Credentials
 git/.config/git/credentials
+
+# Zed Prompt Files
+zed/.config/zed/prompts
