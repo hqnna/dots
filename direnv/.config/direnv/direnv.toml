@@ -5,4 +5,4 @@ strict_env = true
 warn_timeout = 0
 
 [whitelist]
-prefix = [ "/var/home/hanna/code" ]
+prefix = [ "/Users/hanna/Code" ]
