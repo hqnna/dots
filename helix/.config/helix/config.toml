@@ -10,7 +10,6 @@ auto-format = false
 auto-info = false
 scroll-lines = 5
 scrolloff = 10
-rulers = [80]
 
 [editor.lsp]
 enable = false
