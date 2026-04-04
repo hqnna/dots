@@ -7,6 +7,8 @@ vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
 vim.opt.expandtab = true
 vim.opt.relativenumber = false
+vim.opt.viminfofile = "NONE"
+vim.o.shadafile = "NONE"
 
 vim.api.nvim_create_autocmd("TermOpen", {
   callback = function()
