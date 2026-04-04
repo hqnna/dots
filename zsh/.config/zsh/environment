@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-export EDITOR="nvim"
+export EDITOR="hx"
 export COLORTERM="truecolor"
 export PATH="$PATH:$HOME/.local/bin"
 
