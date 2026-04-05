@@ -2,7 +2,8 @@
 
 export EDITOR="hx"
 export COLORTERM="truecolor"
-export PATH="$PATH:$HOME/.local/bin"
+HOMEBREW="$(brew config | awk '/PREFIX/ {print $2}')"
+export PATH="$HOME/.local/bin:$HOMEBREW/bin:$PATH"
 
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
