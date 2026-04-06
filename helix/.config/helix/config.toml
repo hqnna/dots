@@ -1,0 +1,28 @@
+theme = "carbonfox"
+
+[editor]
+mouse = false
+true-color = true
+middle-click-paste = false
+auto-completion = false
+path-completion = true
+auto-format = false
+auto-info = false
+scroll-lines = 5
+scrolloff = 10
+
+[editor.lsp]
+enable = false
+
+[editor.cursor-shape]
+normal = "bar"
+insert = "bar"
+select = "block"
+
+[editor.indent-guides]
+render = true
+character = "│"
+skip-levels = 1
+
+[editor.smart-tab]
+enable = false
