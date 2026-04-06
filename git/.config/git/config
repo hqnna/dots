@@ -7,7 +7,7 @@ signingKey = ~/.ssh/id_ed25519.pub
 format = ssh
 
 [gpg "ssh"]
-allowedSignersFile = /home/hanna/.config/git/signers
+allowedSignersFile = ~/.config/git/signers
 
 [core]
 autocrlf = false
