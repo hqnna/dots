@@ -38,6 +38,7 @@ alias gpl="$(command -v git) pull"
 alias gin="$(command -v git) init"
 alias gtg="$(command -v git) tag"
 
+hash -d host /mnt/c/Users/Hanna
 bindkey '\e[H' beginning-of-line
 bindkey '\e[F' end-of-line
 
