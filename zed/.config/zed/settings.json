@@ -16,7 +16,7 @@
   "text_rendering_mode": "subpixel",
   "image_viewer": { "unit": "decimal" },
   "collaboration_panel": { "button": false },
-  "git_panel": { "default_width": 300 },
+  "git_panel": { "default_width": 300, "dock": "left" },
   "show_call_status_icon": false,
   "tabs": { "file_icons": true },
 
@@ -36,6 +36,7 @@
   "project_panel": {
     "default_width": 300,
     "indent_guides": { "show": "never" },
+    "dock": "left",
     "auto_open": {
       "on_create": true,
       "on_paste": false,
@@ -48,6 +49,7 @@
     "git_status": false,
     "file_icons": false,
     "folder_icons": false,
+    "dock": "left",
   },
 
   "status_bar": {
