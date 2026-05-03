@@ -1,16 +1,8 @@
-# dots ![license] ![activity]
-
-[license]: https://img.shields.io/github/license/hqnna/dots?labelColor=4c4350&color=3672cb
-[activity]: https://img.shields.io/github/last-commit/hqnna/dots?label=activity&labelColor=4c4350&color=3672cb
+# dots
 
 The configuration files for my 15" M4 Macbook Air setup.
 
 ## Usage
-
-> [!NOTE]
-> These configuration files are **not** tailored to be used by multiple people.  
-> They are specifically created for me and my systems, not for others people's
-> setups.
 
 This repository is structured in a way to be compatible with the [stow] project.
 
